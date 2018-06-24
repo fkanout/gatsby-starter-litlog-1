@@ -1,10 +1,10 @@
 {
   "name": "@litlog/litlog-cli",
   "description": "Litlog command line interface",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "author": "Carl W. Hunt <cwhunt@litlog.io>",
   "bin": {
-    "litlog": "lib/index.js"
+    "litlog": "lib/litlog.js"
   },
   "bugs": {
     "url": "https://github.com/litlog/gatsby-starter-litlog/issues"
@@ -17,7 +17,7 @@
     "gatsby"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/litlog.js",
   "repository": "https://github.com/litlog/gatsby-starter-litlog/tree/master/packages/litlog-cli",
   "scripts": {
     "build": "babel src --out-dir lib --ignore **/__tests__",
@@ -28,5 +28,8 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "cross-env": "^5.2.0"
+  },
+  "dependencies": {
+    "commander": "^2.15.1"
   }
 }
