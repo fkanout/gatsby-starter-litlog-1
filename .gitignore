@@ -9,3 +9,16 @@ yarn-error.log
 
 # Built source for packages
 packages/*/lib
+
+# Site files
+/*
+!LICENSE
+!package.json
+!package-lock.json
+!README.md
+!sites
+!src
+/src/*
+!src/pages
+/src/pages/*
+!src/pages/litlog
