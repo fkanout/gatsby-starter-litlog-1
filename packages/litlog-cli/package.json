@@ -1,7 +1,7 @@
 {
   "name": "@litlog/litlog-cli",
   "description": "Litlog command line interface",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Carl W. Hunt <cwhunt@litlog.io>",
   "bin": {
     "litlog": "lib/litlog.js"
@@ -30,6 +30,7 @@
     "cross-env": "^5.2.0"
   },
   "dependencies": {
-    "commander": "^2.15.1"
+    "commander": "^2.15.1",
+    "fs-extra": "^6.0.1"
   }
 }
