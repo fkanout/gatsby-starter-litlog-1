@@ -4,8 +4,8 @@ const program = require('commander');
 const script = require("./script")
 
 program
-  .action(function(slug, comment) {
-    script.run("updated", slug, comment);
+  .action(function(slug, comment, timestamp) {
+    script.run("updated", slug, comment, timestamp);
   });
 
 program

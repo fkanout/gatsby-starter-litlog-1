@@ -47,24 +47,16 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       change_status = 'updating';
     }
 
-    // let matches = slug.match(/^(pages|files)\//);
     let matches = slug.match(/^([^/]+)\//);
     if (matches && !slug.match(/index\.md$/)) {
       type = matches[1];
-      // if (slug.match(/\.file$/)) {
-      //   slug = slug.replace(/\.file/, "");
-      // }
-      // if (type === "files" || type === "pages") {
-      if (type === "pages") {
-        slug = slug.replace(/$/, ".file");
-      }
       slug_remainder = slug.replace(new RegExp(`^${type}`), "");
-      file = `./src/pages/litlog/sites/${site}/${type}${slug_remainder}`;
-      if (type.match(/^(pages|files)$/)) {
-        file = file.replace(/\.file$/, "");
-      }
-      if (type !== "files" && type !== "pages" && !slug.match(/\.md$/)) {
+      file = `./sites/${site}/${type}${slug_remainder}`;
+      if (type !== "files" && !slug.match(/\.md$/)) {
         file = file.replace(/$/, ".md");
+      }
+      if (type === "files") {
+        slug = slug.replace(/$/, ".file");
       }
     } 
 
