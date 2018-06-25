@@ -5,7 +5,12 @@ const script = require("./script")
 
 program
   .action(function(slug, comment, timestamp) {
-    script.run("created", slug, comment, timestamp);
+    const args = program.rawArgs;
+    if (args.length > 3) {
+      script.run("created", args[2], args[3], args[4]);
+    } else {
+      script.run("created", args[2], args[3]);
+    }
   });
 
 program
