@@ -51,7 +51,11 @@ module.exports.run = (verb, slug, comment, timestamp) => {
     if (matches && !slug.match(/index\.md$/)) {
       type = matches[1];
       slug_remainder = slug.replace(new RegExp(`^${type}`), "");
-      file = `./sites/${site}/${type}${slug_remainder}`;
+      if (type === "files") {
+        file = `./sites/${site}/${type}${slug_remainder}`;
+      } else {
+        file = `./src/pages/litlog/sites/${site}/${type}${slug_remainder}`;
+      }
       if (type !== "files" && !slug.match(/\.md$/)) {
         file = file.replace(/$/, ".md");
       }
