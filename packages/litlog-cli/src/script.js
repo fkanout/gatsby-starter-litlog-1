@@ -3,7 +3,7 @@ module.exports.run = (verb, slug, comment, timestamp) => {
   
   const isTrackedInGit = (file) => {
     const gitLsFiles = `git ls-files ${file}`;
-    console.log(gitLsFiles);
+    // console.log(gitLsFiles);
     const gitLsFilesOut = execSync(gitLsFiles);
     if (gitLsFilesOut.toString() == "") {
       return false;
@@ -74,12 +74,17 @@ ${comment}
       console.log(`adding git diff of ${file} to change ${change_file}`);
       change = `${change}\`\`\`diff`;
       if (verb === "updated" && isTrackedInGit(file)) {
-        const gitDiff = `git diff ${file} | tail -n +5`;
-  //     git diff $file | tail -n +5 >> $change_file
-        console.log(gitDiff);
+        // const gitDiff = `git diff ${file} | tail -n +5`;
+        const gitDiff = `git diff ${file} | tail -n +3`;
+        console.log("git apply << EOF");
         const gitDiffOut = execSync(gitDiff);
+        const gitDiffOutStr = gitDiffOut.toString();
+        console.log(`${gitDiffOutStr}EOF`);
+        let lines = gitDiffOutStr.split('\n');
+        lines.shift();
+        lines.shift();
         change = `${change}
-${gitDiffOut.toString()}`;
+${lines.join('\n')}`;
       } else {
         console.log(`${file} is untracked`);
         const blank_file = "__blank";
@@ -140,13 +145,13 @@ ${gitDiffOut.toString()}`;
       console.log("Cannot write file ", e);
     }
   
-    console.log("site", site);
-    console.log("verb", verb);
-    console.log("slug", slug);
-    console.log("slug_remainder", slug_remainder);
-    console.log("file", file);
-    console.log("comment", comment);
-    console.log("timestamp", timestamp);
-    console.log("today", today);
+    // console.log("site", site);
+    // console.log("verb", verb);
+    // console.log("slug", slug);
+    // console.log("slug_remainder", slug_remainder);
+    // console.log("file", file);
+    // console.log("comment", comment);
+    // console.log("timestamp", timestamp);
+    // console.log("today", today);
   }
 };
