@@ -8,6 +8,10 @@
       "path----cac63ff5c1b42581353c.js",
       "path----cac63ff5c1b42581353c.js.map"
     ],
+    "path---test": [
+      "path---test-a0e39f21c11f6a62c5ab.js",
+      "path---test-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-8c23b23da36faaba3e23.js",
       "component---src-layouts-index-js-8c23b23da36faaba3e23.js.map"
@@ -37,14 +41,18 @@
       "component---src-pages-page-2-js-7d1313be9ee00b98330c.js.map"
     ],
     "app": [
-      "app-b94e6664784268f44cfd.js",
+      "app-4423028f669698aa6dc4.js",
       "build-js-styles.css",
-      "app-b94e6664784268f44cfd.js.map",
+      "app-4423028f669698aa6dc4.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-test-js": [
+      "component---src-pages-test-js-6aa715939cf9d2812445.js",
+      "component---src-pages-test-js-6aa715939cf9d2812445.js.map"
     ]
   }
 }
