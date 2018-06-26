@@ -53,6 +53,7 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       type = matches[1];
       slug_remainder = slug.replace(new RegExp(`^${type}`), "");
       if (type === "files") {
+        slug = slug.replace(/$/, ".file");
         if (slug.match(/^files\/src\//)) {
           file = `.${slug_remainder}`;
           change_file = `src/pages/litlog/changes/${slug}/${timestamp}.md`;
@@ -67,9 +68,6 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       if (type !== "files" && !slug.match(/\.md$/)) {
         file = file.replace(/$/, ".md");
       }
-      // if (type === "files") {
-      //   slug = slug.replace(/$/, ".file");
-      // }
     } 
 
     console.log(`creating new change ${change_file}`);
