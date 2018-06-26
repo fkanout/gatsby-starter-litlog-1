@@ -7,7 +7,7 @@ export default ({ data }) => {
       <table>
         <thead>
           <tr>
-            <th>fileAbsolutePath</th>
+            <th>link</th>
             <th>title</th>
           </tr>
         </thead>
@@ -15,7 +15,7 @@ export default ({ data }) => {
           {data.allMarkdownRemark.edges.map(({ node }, index) =>
             <tr key={index}>
               <td>
-                {node.fileAbsolutePath}
+                <Link to={node.fields.slug}>{node.fields.slug}</Link>
               </td>
               <td>
                 {node.frontmatter.title}
@@ -38,6 +38,9 @@ export const query = graphql`
           fileAbsolutePath
           frontmatter {
             title
+          }
+          fields {
+            slug
           }
         }
       }
