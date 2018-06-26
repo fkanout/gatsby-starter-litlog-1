@@ -25,6 +25,7 @@ module.exports.run = (verb, slug, comment, timestamp) => {
     }
     let slug_remainder = slug;
     let file = slug;
+    let change_file = slug;
     let type = slug;
     let change_title = "";
     let change_status = "";
@@ -52,23 +53,25 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       type = matches[1];
       slug_remainder = slug.replace(new RegExp(`^${type}`), "");
       if (type === "files") {
-        if (slug.match(/^files\/src\/pages\/litlog\//)) {
+        if (slug.match(/^files\/src\//)) {
           file = `.${slug_remainder}`;
+          change_file = `src/pages/litlog/changes/${slug}/${timestamp}.md`;
         } else {
           file = `./sites/${site}/${type}${slug_remainder}`;
+          change_file = `src/pages/litlog/sites/${site}/changes/${slug}/${timestamp}.md`;
         }
       } else {
         file = `./src/pages/litlog/sites/${site}/${type}${slug_remainder}`;
+        change_file = `src/pages/litlog/sites/${site}/changes/${slug}/${timestamp}.md`;
       }
       if (type !== "files" && !slug.match(/\.md$/)) {
         file = file.replace(/$/, ".md");
       }
-      if (type === "files") {
-        slug = slug.replace(/$/, ".file");
-      }
+      // if (type === "files") {
+      //   slug = slug.replace(/$/, ".file");
+      // }
     } 
 
-    const change_file = `src/pages/litlog/sites/${site}/changes/${slug}/${timestamp}.md`;
     console.log(`creating new change ${change_file}`);
 
     change = `---
