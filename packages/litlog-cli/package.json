@@ -1,7 +1,7 @@
 {
   "name": "@litlog/litlog-cli",
   "description": "Litlog command line interface",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "Carl W. Hunt <cwhunt@litlog.io>",
   "bin": {
     "litlog": "lib/litlog.js"

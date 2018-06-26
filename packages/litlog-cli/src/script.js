@@ -52,7 +52,11 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       type = matches[1];
       slug_remainder = slug.replace(new RegExp(`^${type}`), "");
       if (type === "files") {
-        file = `./sites/${site}/${type}${slug_remainder}`;
+        if (slug.match(/^files\/src\/pages\/litlog\//)) {
+          file = `.${slug_remainder}`;
+        } else {
+          file = `./sites/${site}/${type}${slug_remainder}`;
+        }
       } else {
         file = `./src/pages/litlog/sites/${site}/${type}${slug_remainder}`;
       }
@@ -78,7 +82,6 @@ ${comment}
       console.log(`adding git diff of ${file} to change ${change_file}`);
       change = `${change}\`\`\`diff`;
       if (verb === "updated" && isTrackedInGit(file)) {
-        // const gitDiff = `git diff ${file} | tail -n +5`;
         const gitDiff = `git diff ${file} | tail -n +3`;
         console.log("git apply << EOF");
         const gitDiffOut = execSync(gitDiff);
@@ -100,11 +103,18 @@ ${lines.join('\n')}`;
           }catch (e){
             console.log("Cannot write file ", e);
           }
-          const gitDiff = `git diff --no-index ${blank_file} ${file} | tail -n +5`;
-          console.log(gitDiff);
+          const gitDiff = `git diff --no-index ${blank_file} ${file} | tail -n +3`;
+          console.log("touch __blank");
+          console.log("git apply << EOF");
           const gitDiffOut = execSync(gitDiff);
+          const gitDiffOutStr = gitDiffOut.toString();
+          console.log(`${gitDiffOutStr}EOF`);
+          console.log("rm __blank");
+          let lines = gitDiffOutStr.split('\n');
+          lines.shift();
+          lines.shift();
           change = `${change}
-${gitDiffOut.toString()}`;
+${lines.join('\n')}`;
           if (fs.existsSync(blank_file)) {
             fs.unlinkSync(blank_file);
           }            
