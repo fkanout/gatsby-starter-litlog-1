@@ -22,4 +22,3 @@ packages/*/lib
 !src/pages
 /src/pages/*
 !src/pages/litlog
-!src/templates
