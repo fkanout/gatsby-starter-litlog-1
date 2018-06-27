@@ -1,0 +1,631 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/gatsby-starter-litlog/component---src-layouts-index-js-e96121640b0eaac02db8.js" as="script"/><link rel="preload" href="/gatsby-starter-litlog/component---src-templates-litlog-page-js-8f892849633af9e7202c.js" as="script"/><link rel="preload" href="/gatsby-starter-litlog/path---sites-site-1-changes-tasks-task-1-2018-06-27-t-1235-a0407994ed706eca1f0a.js" as="script"/><link rel="preload" href="/gatsby-starter-litlog/app-312527e7427d7bfcb3ab.js" as="script"/><link rel="preload" href="/gatsby-starter-litlog/commons-922bd637923bf00f2c28.js" as="script"/><title data-react-helmet="true">Gatsby Default Starter</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="3034890"><!-- react-empty: 2 --><div style="background:rebeccapurple;margin-bottom:1.45rem;" data-reactid="3"><div style="margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem;" data-reactid="4"><h1 style="margin:0;" data-reactid="5"><a style="color:white;text-decoration:none;" href="/gatsby-starter-litlog/" data-reactid="6">Gatsby Default Starter</a></h1></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="7"><div data-reactid="8"><h1 data-reactid="9">Update</h1><div data-reactid="10"><p>added plan step-7</p>
+<div class="gatsby-highlight" data-language="diff">
+      <pre class="language-diff"><code class="language-diff">@@ -55,7 +55,7 @@ mkdir sites/$LITLOG_SITE/files/src
+ mkdir sites/$LITLOG_SITE/files/src/components
+ mkdir sites/$LITLOG_SITE/files/src/layouts
+ mkdir sites/$LITLOG_SITE/pages
+<span class="token deleted">-</span>
+<span class="token inserted">+#</span>
+ mv .prettierrc sites/$LITLOG_SITE/files
+ mv LICENSE sites/$LITLOG_SITE/files
+ mv README.md sites/$LITLOG_SITE/files
+@@ -91,7 +91,7 @@ litlog created files/src/pages/page-2.js "Ran 'gatsby new $LITLOG_SITE https://g
+ # commit changes
+ git add .
+ git commit -m "initial setup from gatsby-starter-default"
+<span class="token deleted">-</span>
+<span class="token inserted">+#</span>
+ # alter .gitignore and package.json
+ cp sites/$LITLOG_SITE/files/package.json .
+ # modify .gitignore as below
+@@ -99,7 +99,7 @@ cp sites/$LITLOG_SITE/files/package.json .
+ npm install --save-dev cross-var
+ npm install --save-dev npm-run-parallel
+ npm install --save-dev gh-pages
+<span class="token deleted">-</span>
+<span class="token inserted">+#</span>
+ # make sure development site runs
+ npm run site-develop
+ # make sure site builds
+@@ -110,11 +110,11 @@ git commit -m "set up for site files"
+ # deploy site
+ npm run deploy</code></pre>
+      </div>
+<p>-<code class="language-text">.gitignore</code> additions:
++<em>.gitignore</em> additions:</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text"># Built source for packages
+packages/*/lib
+-
++#
+# Site files
+/*
+!LICENSE
+@@ -128,7 +128,7 @@ packages/*/lib
+/src/pages/*
+!src/pages/litlog</code></pre>
+      </div>
+<p>-<code class="language-text">package.json</code> modifications:
++<em>package.json</em> modifications:</p>
+<div class="gatsby-highlight" data-language="json">
+      <pre class="language-json"><code class="language-json">  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"npm run site &amp;&amp; gatsby build"</span><span class="token punctuation">,</span>
+@@ -<span class="token number">147</span><span class="token punctuation">,</span><span class="token number">15</span> +<span class="token number">147</span><span class="token punctuation">,</span><span class="token number">17</span> @@ npm run site-develop #in a different terminal
+litlog updating files/gatsby-config.js
+# edit file
+git apply &lt;&lt; EOF
+---- a/sites/site-<span class="token number">1</span>/files/gatsby-config.js
+-+++ b/sites/site-<span class="token number">1</span>/files/gatsby-config.js
+-@@ -<span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span> +<span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span> @@ module.exports = <span class="token punctuation">{</span>
+-     title<span class="token operator">:</span> 'Gatsby Default Starter'<span class="token punctuation">,</span>
+-   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+-   plugins<span class="token operator">:</span> <span class="token punctuation">[</span>'gatsby-plugin-react-helmet'<span class="token punctuation">]</span><span class="token punctuation">,</span>
+-+  pathPrefix<span class="token operator">:</span> '/gatsby-starter-litlog'
+- <span class="token punctuation">}</span>
++>--- a/sites/site-<span class="token number">1</span>/files/gatsby-config.js
++>+++ b/sites/site-<span class="token number">1</span>/files/gatsby-config.js
++>@@ -<span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span> +<span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span> @@ module.exports = <span class="token punctuation">{</span>
++>     title<span class="token operator">:</span> 'Gatsby Default Starter'<span class="token punctuation">,</span>
++>   <span class="token punctuation">}</span><span class="token punctuation">,</span>
++>   plugins<span class="token operator">:</span> <span class="token punctuation">[</span>'gatsby-plugin-react-helmet'<span class="token punctuation">]</span><span class="token punctuation">,</span>
++>+  pathPrefix<span class="token operator">:</span> '/gatsby-starter-litlog'
++> <span class="token punctuation">}</span>
+EOF
++# note the > above which is not part of the actual command but included
++# because there's an issue rendering diff syntax
+litlog updated files/gatsby-config.js <span class="token string">"added pathPrefix"</span>
+npm run build
+npm run deploy
+@@ -<span class="token number">177</span><span class="token punctuation">,</span><span class="token number">16</span> +<span class="token number">179</span><span class="token punctuation">,</span><span class="token number">16</span> @@ git commit -m "set up litlog-cli<span class="token punctuation">,</span> added request-<span class="token number">1</span> spec<span class="token punctuation">,</span> and task-<span class="token number">1</span> plan step-<span class="token number">1</span> t
+litlog updating tasks/task1
+npm install --save gatsby-transformer-remark
+git apply &lt;&lt; EOF
+---- a/sites/site-<span class="token number">1</span>/files/package.json
+-+++ b/sites/site-<span class="token number">1</span>/files/package.json
+-@@ -<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">6</span> +<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">7</span> @@
+-     <span class="token property">"gatsby"</span><span class="token operator">:</span> <span class="token string">"^1.9.247"</span><span class="token punctuation">,</span>
+-     <span class="token property">"gatsby-link"</span><span class="token operator">:</span> <span class="token string">"^1.6.40"</span><span class="token punctuation">,</span>
+-     <span class="token property">"gatsby-plugin-react-helmet"</span><span class="token operator">:</span> <span class="token string">"^2.0.10"</span><span class="token punctuation">,</span>
+-+    <span class="token property">"gatsby-transformer-remark"</span><span class="token operator">:</span> <span class="token string">"^1.7.44"</span><span class="token punctuation">,</span>
+-     <span class="token property">"react-helmet"</span><span class="token operator">:</span> <span class="token string">"^5.2.0"</span>
+-   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+-   <span class="token property">"keywords"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
++>--- a/sites/site-<span class="token number">1</span>/files/package.json
++>+++ b/sites/site-<span class="token number">1</span>/files/package.json
++>@@ -<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">6</span> +<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">7</span> @@
++>     <span class="token property">"gatsby"</span><span class="token operator">:</span> <span class="token string">"^1.9.247"</span><span class="token punctuation">,</span>
++>     <span class="token property">"gatsby-link"</span><span class="token operator">:</span> <span class="token string">"^1.6.40"</span><span class="token punctuation">,</span>
++>     <span class="token property">"gatsby-plugin-react-helmet"</span><span class="token operator">:</span> <span class="token string">"^2.0.10"</span><span class="token punctuation">,</span>
++>+    <span class="token property">"gatsby-transformer-remark"</span><span class="token operator">:</span> <span class="token string">"^1.7.44"</span><span class="token punctuation">,</span>
++>     <span class="token property">"react-helmet"</span><span class="token operator">:</span> <span class="token string">"^5.2.0"</span>
++>   <span class="token punctuation">}</span><span class="token punctuation">,</span>
++>   <span class="token property">"keywords"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+EOF
+litlog updated files/package.json <span class="token string">"ran 'npm install --save gatsby-transformer-remark' (following [part-six](https://www.gatsbyjs.org/tutorial/part-six/) of the [Gatsby.js Tutorial])"</span>
+# commit these files because I'm going to run another npm install
+@@ -<span class="token number">194</span><span class="token punctuation">,</span><span class="token number">41</span> +<span class="token number">196</span><span class="token punctuation">,</span><span class="token number">41</span> @@ git add package* sites
+git commit -m <span class="token string">"ran 'npm install --save gatsby-transformer-remark'"</span>
+npm install --save gatsby-source-filesystem
+git apply &lt;&lt; EOF
+---- a/sites/site-<span class="token number">1</span>/files/package.json
+-+++ b/sites/site-<span class="token number">1</span>/files/package.json
+-@@ -<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">6</span> +<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">7</span> @@
+-     <span class="token property">"gatsby"</span><span class="token operator">:</span> <span class="token string">"^1.9.247"</span><span class="token punctuation">,</span>
+-     <span class="token property">"gatsby-link"</span><span class="token operator">:</span> <span class="token string">"^1.6.40"</span><span class="token punctuation">,</span>
+-     <span class="token property">"gatsby-plugin-react-helmet"</span><span class="token operator">:</span> <span class="token string">"^2.0.10"</span><span class="token punctuation">,</span>
+-+    <span class="token property">"gatsby-source-filesystem"</span><span class="token operator">:</span> <span class="token string">"^1.5.39"</span><span class="token punctuation">,</span>
+-     <span class="token property">"gatsby-transformer-remark"</span><span class="token operator">:</span> <span class="token string">"^1.7.44"</span><span class="token punctuation">,</span>
+-     <span class="token property">"react-helmet"</span><span class="token operator">:</span> <span class="token string">"^5.2.0"</span>
+-   <span class="token punctuation">}</span><span class="token punctuation">,</span>
++>--- a/sites/site-<span class="token number">1</span>/files/package.json
++>+++ b/sites/site-<span class="token number">1</span>/files/package.json
++>@@ -<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">6</span> +<span class="token number">7</span><span class="token punctuation">,</span><span class="token number">7</span> @@
++>     <span class="token property">"gatsby"</span><span class="token operator">:</span> <span class="token string">"^1.9.247"</span><span class="token punctuation">,</span>
++>     <span class="token property">"gatsby-link"</span><span class="token operator">:</span> <span class="token string">"^1.6.40"</span><span class="token punctuation">,</span>
++>     <span class="token property">"gatsby-plugin-react-helmet"</span><span class="token operator">:</span> <span class="token string">"^2.0.10"</span><span class="token punctuation">,</span>
++>+    <span class="token property">"gatsby-source-filesystem"</span><span class="token operator">:</span> <span class="token string">"^1.5.39"</span><span class="token punctuation">,</span>
++>     <span class="token property">"gatsby-transformer-remark"</span><span class="token operator">:</span> <span class="token string">"^1.7.44"</span><span class="token punctuation">,</span>
++>     <span class="token property">"react-helmet"</span><span class="token operator">:</span> <span class="token string">"^5.2.0"</span>
++>   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+EOF
+litlog updated files/package.json <span class="token string">"ran 'npm install --save gatsby-source-filesystem' (following [part-six](https://www.gatsbyjs.org/tutorial/part-six/) of the [Gatsby.js Tutorial])"</span>
+litlog updating files/gatsby-config.js
+# update file
+git apply &lt;&lt; EOF
+---- a/sites/site-<span class="token number">1</span>/files/gatsby-config.js
+-+++ b/sites/site-<span class="token number">1</span>/files/gatsby-config.js
+-@@ -<span class="token number">2</span><span class="token punctuation">,</span><span class="token number">6</span> +<span class="token number">2</span><span class="token punctuation">,</span><span class="token number">16</span> @@ module.exports = <span class="token punctuation">{</span>
+-   siteMetadata<span class="token operator">:</span> <span class="token punctuation">{</span>
+-     title<span class="token operator">:</span> 'Gatsby Default Starter'<span class="token punctuation">,</span>
+-   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+--  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>'gatsby-plugin-react-helmet'<span class="token punctuation">]</span><span class="token punctuation">,</span>
+-+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+-+    'gatsby-plugin-react-helmet'<span class="token punctuation">,</span>
+-+    <span class="token punctuation">{</span>
+-+      resolve<span class="token operator">:</span> `gatsby-source-filesystem`<span class="token punctuation">,</span>
+-+      options<span class="token operator">:</span> <span class="token punctuation">{</span>
+-+        name<span class="token operator">:</span> `litlog`<span class="token punctuation">,</span>
+-+        path<span class="token operator">:</span> `$<span class="token punctuation">{</span>__dirname<span class="token punctuation">}</span>/src/pages/litlog`<span class="token punctuation">,</span>
+-+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+-+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+-+    `gatsby-transformer-remark`<span class="token punctuation">,</span>
+-+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+-   pathPrefix<span class="token operator">:</span> '/gatsby-starter-litlog'
+- <span class="token punctuation">}</span>
++>--- a/sites/site-<span class="token number">1</span>/files/gatsby-config.js
++>+++ b/sites/site-<span class="token number">1</span>/files/gatsby-config.js
++>@@ -<span class="token number">2</span><span class="token punctuation">,</span><span class="token number">6</span> +<span class="token number">2</span><span class="token punctuation">,</span><span class="token number">16</span> @@ module.exports = <span class="token punctuation">{</span>
++>   siteMetadata<span class="token operator">:</span> <span class="token punctuation">{</span>
++>     title<span class="token operator">:</span> 'Gatsby Default Starter'<span class="token punctuation">,</span>
++>   <span class="token punctuation">}</span><span class="token punctuation">,</span>
++>-  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>'gatsby-plugin-react-helmet'<span class="token punctuation">]</span><span class="token punctuation">,</span>
++>+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
++>+    'gatsby-plugin-react-helmet'<span class="token punctuation">,</span>
++>+    <span class="token punctuation">{</span>
++>+      resolve<span class="token operator">:</span> `gatsby-source-filesystem`<span class="token punctuation">,</span>
++>+      options<span class="token operator">:</span> <span class="token punctuation">{</span>
++>+        name<span class="token operator">:</span> `litlog`<span class="token punctuation">,</span>
++>+        path<span class="token operator">:</span> `$<span class="token punctuation">{</span>__dirname<span class="token punctuation">}</span>/src/pages/litlog`<span class="token punctuation">,</span>
++>+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
++>+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
++>+    `gatsby-transformer-remark`<span class="token punctuation">,</span>
++>+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
++>   pathPrefix<span class="token operator">:</span> '/gatsby-starter-litlog'
++> <span class="token punctuation">}</span>
+EOF
+litlog updated files/gatsby-config.js <span class="token string">"following [part-six](https://www.gatsbyjs.org/tutorial/part-six/) of the [Gatsby.js Tutorial]"</span>
+# restart dev server
+@@ -<span class="token number">251</span><span class="token punctuation">,</span><span class="token number">61</span> +<span class="token number">253</span><span class="token punctuation">,</span><span class="token number">61</span> @@ query IndexQuery <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>-Create the index page for the <litlog-link to="/">litlog</litlog-link> folder folder. Right now it will just list the <code class="language-text">fileAbsolutePath</code> of the markdown files and the <code class="language-text">title</code> from the frontmatter.
++Create the index page for the <litlog-link to="/">litlog</litlog-link> folder folder. Right now it will just list the <em>fileAbsolutePath</em> of the markdown files and the <em>title</em> from the frontmatter.</p>
+<div class="gatsby-highlight" data-language="bash">
+      <pre class="language-bash"><code class="language-bash">litlog creating files/src/pages/litlog/index.js
+<span class="token comment"># edit file and check out http://localhost:8000/litlog/</span>
+<span class="token function">touch</span> __blank
+<span class="token function">git</span> apply <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+---- a/__blank
+-+++ b/./src/pages/litlog/index.js
+-@@ -0,0 +1,46 @@
+-+import React from "react";
+-+import Link from "gatsby-link";
+-+
+-+export default ({ data }) => {
+-+  return (
+-+    &lt;div>
+-+      &lt;table>
+-+        &lt;thead>
+-+          &lt;tr>
+-+            &lt;th>fileAbsolutePath&lt;/th>
+-+            &lt;th>title&lt;/th>
+-+          &lt;/tr>
+-+        &lt;/thead>
+-+        &lt;tbody>
+-+          {data.allMarkdownRemark.edges.map(({ node }, index) =>
+-+            &lt;tr key={index}>
+-+              &lt;td>
+-+                {node.fileAbsolutePath}
+-+              &lt;/td>
+-+              &lt;td>
+-+                {node.frontmatter.title}
+-+              &lt;/td>
+-+            &lt;/tr>
+-+          )}
+-+        &lt;/tbody>
+-+      &lt;/table>
+-+    &lt;/div>
+-+  );
+-+};
+-+
+-+export const query = graphql<span class="token variable"><span class="token variable">`</span>
+-+  query IndexQuery <span class="token punctuation">{</span>
+-+    allMarkdownRemark<span class="token punctuation">(</span>sort: <span class="token punctuation">{</span> fields: <span class="token punctuation">[</span>fileAbsolutePath<span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+-+      totalCount
+-+      edges <span class="token punctuation">{</span>
+-+        node <span class="token punctuation">{</span>
+-+          <span class="token function">id</span>
+-+          fileAbsolutePath
+-+          frontmatter <span class="token punctuation">{</span>
+-+            title
+-+          <span class="token punctuation">}</span>
+-+        <span class="token punctuation">}</span>
+-+      <span class="token punctuation">}</span>
+-+    <span class="token punctuation">}</span>
+-+  <span class="token punctuation">}</span>
+-+<span class="token variable">`</span></span>;
++>--- a/__blank
++>+++ b/./src/pages/litlog/index.js
++>@@ -0,0 +1,46 @@
++>+import React from "react";
++>+import Link from "gatsby-link";
++>+
++>+export default ({ data }) => {
++>+  return (
++>+    &lt;div>
++>+      &lt;table>
++>+        &lt;thead>
++>+          &lt;tr>
++>+            &lt;th>fileAbsolutePath&lt;/th>
++>+            &lt;th>title&lt;/th>
++>+          &lt;/tr>
++>+        &lt;/thead>
++>+        &lt;tbody>
++>+          {data.allMarkdownRemark.edges.map(({ node }, index) =>
++>+            &lt;tr key={index}>
++>+              &lt;td>
++>+                {node.fileAbsolutePath}
++>+              &lt;/td>
++>+              &lt;td>
++>+                {node.frontmatter.title}
++>+              &lt;/td>
++>+            &lt;/tr>
++>+          )}
++>+        &lt;/tbody>
++>+      &lt;/table>
++>+    &lt;/div>
++>+  );
++>+};
++>+
++>+export const query = graphql<span class="token variable"><span class="token variable">`</span>
++<span class="token operator">></span>+  query IndexQuery <span class="token punctuation">{</span>
++<span class="token operator">></span>+    allMarkdownRemark<span class="token punctuation">(</span>sort: <span class="token punctuation">{</span> fields: <span class="token punctuation">[</span>fileAbsolutePath<span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
++<span class="token operator">></span>+      totalCount
++<span class="token operator">></span>+      edges <span class="token punctuation">{</span>
++<span class="token operator">></span>+        node <span class="token punctuation">{</span>
++<span class="token operator">></span>+          <span class="token function">id</span>
++<span class="token operator">></span>+          fileAbsolutePath
++<span class="token operator">></span>+          frontmatter <span class="token punctuation">{</span>
++<span class="token operator">></span>+            title
++<span class="token operator">></span>+          <span class="token punctuation">}</span>
++<span class="token operator">></span>+        <span class="token punctuation">}</span>
++<span class="token operator">></span>+      <span class="token punctuation">}</span>
++<span class="token operator">></span>+    <span class="token punctuation">}</span>
++<span class="token operator">></span>+  <span class="token punctuation">}</span>
++<span class="token operator">></span>+<span class="token variable">`</span></span>;
+EOF</span>
+<span class="token function">rm</span> __blank
+litlog created files/src/pages/litlog/index.js <span class="token string">"following [part-six](https://www.gatsbyjs.org/tutorial/part-six/) of the [Gatsby.js Tutorial], simplified to return fewer/different fields and use a table"</span>
+@@ -313,96 +315,96 @@ litlog updated tasks/task-1 <span class="token string">"added task-1 plan step-5"</span>
+<span class="token function">git</span> add <span class="token keyword">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"added task-1 plan step-5"</span></code></pre>
+      </div>
+<p>-1. Follow <a href="https://www.gatsbyjs.org/tutorial/part-seven/">part-seven</a> of the [Gatsby.js Tutorial] so <litlog-link to="/">litlog</litlog-link> pages can be viewed. First create <litlog-link to="/files/gatsby-node.js.file">gatsby-node.js</litlog-link> <code class="language-text">gatsby-node.js</code> except use <code class="language-text">/litlog${slug}</code> for the <code class="language-text">value</code> of <code class="language-text">createNodeField</code> and <code class="language-text">litlog-page.js</code> instead of <code class="language-text">blog-post.js</code>. Then create <litlog-link to="/files/src/templates/litlog-page.js.file">litlog-page.js</litlog-link> and use <code class="language-text">LitlogPageQuery</code> instead of <code class="language-text">BlogPostQuery</code>. Modify <litlog-link to="/files/src/pages/litlog/index.js.file">the litlog index page</litlog-link> to add <code class="language-text">import Link from &quot;gatsby-link&quot;;</code>, replace <em>fileAbsolutePath</em> with <em>link</em>, <code class="language-text">{node.fileAbsolutePath}</code> with <code class="language-text">&lt;Link to={node.fields.slug}&gt;{node.fields.slug}&lt;/Link&gt;</code>, and change the graphql to add the slug.
++1. Follow <a href="https://www.gatsbyjs.org/tutorial/part-seven/">part-seven</a> of the [Gatsby.js Tutorial] so <litlog-link to="/">litlog</litlog-link> pages can be viewed. First create <litlog-link to="/files/gatsby-node.js.file">gatsby-node.js</litlog-link> <em>gatsby-node.js</em> except use <em>/litlog${slug}</em> for the <em>value</em> of <em>createNodeField</em> and <em>litlog-page.js</em> instead of <em>blog-post.js</em>. Then create <litlog-link to="/files/src/templates/litlog-page.js.file">litlog-page.js</litlog-link> and use <em>LitlogPageQuery</em> instead of <em>BlogPostQuery</em>. Modify <litlog-link to="/files/src/pages/litlog/index.js.file">the litlog index page</litlog-link> to add <em>import Link from "gatsby-link";</em>, replace <em>fileAbsolutePath</em> with <em>link</em>, <em>{node.fileAbsolutePath}</em> with <em><Link to={node.fields.slug}>{node.fields.slug}</Link></em>, and change the graphql to add the slug.</p>
+<div class="gatsby-highlight" data-language="bash">
+      <pre class="language-bash"><code class="language-bash">litlog updating tasks/task-1
+litlog updating files/gatsby-node.js
+<span class="token comment"># update file</span>
+<span class="token function">git</span> apply <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+---- a/sites/site-1/files/gatsby-node.js
+-+++ b/sites/site-1/files/gatsby-node.js
+-@@ -4,4 +4,48 @@
+-  * See: https://www.gatsbyjs.org/docs/node-apis/
+-  */
+-
+-- // You can delete this file if you're not using it
+-\ No newline at end of file
+-+const path = require(<span class="token variable"><span class="token variable">`</span>path<span class="token variable">`</span></span>);
+-+const { createFilePath } = require(<span class="token variable"><span class="token variable">`</span>gatsby-source-filesystem<span class="token variable">`</span></span>);
+-+
+-+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+-+  const { createNodeField } = boundActionCreators
+-+  if (node.internal.type === <span class="token variable"><span class="token variable">`</span>MarkdownRemark<span class="token variable">`</span></span>) {
+-+    const slug = createFilePath({ node, getNode, basePath: <span class="token variable"><span class="token variable">`</span>pages<span class="token variable">`</span></span> })
+-+    createNodeField({
+-+      node,
+-+      name: <span class="token variable"><span class="token variable">`</span>slug<span class="token variable">`</span></span>,
+-+      value: <span class="token variable"><span class="token variable">`</span>$<span class="token punctuation">{</span>slug<span class="token punctuation">}</span><span class="token variable">`</span></span>,
+-+    })
+-+  }
+-+};
+-+
+-+exports.createPages = ({ graphql, boundActionCreators }) => {
+-+  const { createPage } = boundActionCreators
+-+  return new Promise((resolve, reject) => {
+-+    graphql(<span class="token variable"><span class="token variable">`</span>
+-+      <span class="token punctuation">{</span>
+-+        allMarkdownRemark <span class="token punctuation">{</span>
+-+          edges <span class="token punctuation">{</span>
+-+            node <span class="token punctuation">{</span>
+-+              fields <span class="token punctuation">{</span>
+-+                slug
+-+              <span class="token punctuation">}</span>
+-+            <span class="token punctuation">}</span>
+-+          <span class="token punctuation">}</span>
+-+        <span class="token punctuation">}</span>
+-+      <span class="token punctuation">}</span>
+-+    <span class="token variable">`</span></span>).then(result => {
+-+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+-+        createPage({
+-+          path: node.fields.slug,
+-+          component: path.resolve(<span class="token variable"><span class="token variable">`</span>./src/templates/litlog-page.js<span class="token variable">`</span></span>),
+-+          context: {
+-+            // Data passed to context is available in page queries as GraphQL variables.
+-+            slug: node.fields.slug,
+-+          },
+-+        })
+-+      })
+-+      resolve()
+-+    })
+-+  })
+-+};
++>--- a/sites/site-1/files/gatsby-node.js
++>+++ b/sites/site-1/files/gatsby-node.js
++>@@ -4,4 +4,48 @@
++>  * See: https://www.gatsbyjs.org/docs/node-apis/
++>  */
++>
++>- // You can delete this file if you're not using it
++>\ No newline at end of file
++>+const path = require(<span class="token variable"><span class="token variable">`</span>path<span class="token variable">`</span></span>);
++>+const { createFilePath } = require(<span class="token variable"><span class="token variable">`</span>gatsby-source-filesystem<span class="token variable">`</span></span>);
++>+
++>+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
++>+  const { createNodeField } = boundActionCreators
++>+  if (node.internal.type === <span class="token variable"><span class="token variable">`</span>MarkdownRemark<span class="token variable">`</span></span>) {
++>+    const slug = createFilePath({ node, getNode, basePath: <span class="token variable"><span class="token variable">`</span>pages<span class="token variable">`</span></span> })
++>+    createNodeField({
++>+      node,
++>+      name: <span class="token variable"><span class="token variable">`</span>slug<span class="token variable">`</span></span>,
++>+      value: <span class="token variable"><span class="token variable">`</span>$<span class="token punctuation">{</span>slug<span class="token punctuation">}</span><span class="token variable">`</span></span>,
++>+    })
++>+  }
++>+};
++>+
++>+exports.createPages = ({ graphql, boundActionCreators }) => {
++>+  const { createPage } = boundActionCreators
++>+  return new Promise((resolve, reject) => {
++>+    graphql(<span class="token variable"><span class="token variable">`</span>
++<span class="token operator">></span>+      <span class="token punctuation">{</span>
++<span class="token operator">></span>+        allMarkdownRemark <span class="token punctuation">{</span>
++<span class="token operator">></span>+          edges <span class="token punctuation">{</span>
++<span class="token operator">></span>+            node <span class="token punctuation">{</span>
++<span class="token operator">></span>+              fields <span class="token punctuation">{</span>
++<span class="token operator">></span>+                slug
++<span class="token operator">></span>+              <span class="token punctuation">}</span>
++<span class="token operator">></span>+            <span class="token punctuation">}</span>
++<span class="token operator">></span>+          <span class="token punctuation">}</span>
++<span class="token operator">></span>+        <span class="token punctuation">}</span>
++<span class="token operator">></span>+      <span class="token punctuation">}</span>
++<span class="token operator">></span>+    <span class="token variable">`</span></span>).then(result => {
++>+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
++>+        createPage({
++>+          path: node.fields.slug,
++>+          component: path.resolve(<span class="token variable"><span class="token variable">`</span>./src/templates/litlog-page.js<span class="token variable">`</span></span>),
++>+          context: {
++>+            // Data passed to context is available in page queries as GraphQL variables.
++>+            slug: node.fields.slug,
++>+          },
++>+        })
++>+      })
++>+      resolve()
++>+    })
++>+  })
++>+};
+EOF</span>
+litlog updated files/gatsby-node.js <span class="token string">"following [part-seven](https://www.gatsbyjs.org/tutorial/part-seven/) of the [Gatsby.js Tutorial, except using *litlog-page.js* instead of *blog-post.js*"</span>
+litlog creating files/src/templates/litlog-page.js
+<span class="token comment"># create file</span>
+<span class="token function">touch</span> __blank
+<span class="token function">git</span> apply <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+---- a/__blank
+-+++ b/./src/templates/litlog-page.js
+-@@ -0,0 +1,22 @@
+-+import React from "react";
+-+
+-+export default ({ data }) => {
+-+  const post = data.markdownRemark;
+-+  return (
+-+    &lt;div>
+-+      &lt;h1>{post.frontmatter.title}&lt;/h1>
+-+      &lt;div dangerouslySetInnerHTML={{ __html: post.html }} />
+-+    &lt;/div>
+-+  );
+-+};
+-+
+-+export const query = graphql<span class="token variable"><span class="token variable">`</span>
+-+  query LitlogPageQuery<span class="token punctuation">(</span>$slug: String<span class="token operator">!</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+-+    markdownRemark<span class="token punctuation">(</span>fields: <span class="token punctuation">{</span> slug: <span class="token punctuation">{</span> eq: $slug <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+-+      html
+-+      frontmatter <span class="token punctuation">{</span>
+-+        title
+-+      <span class="token punctuation">}</span>
+-+    <span class="token punctuation">}</span>
+-+  <span class="token punctuation">}</span>
+-+<span class="token variable">`</span></span>;
++>--- a/__blank
++>+++ b/./src/templates/litlog-page.js
++>@@ -0,0 +1,22 @@
++>+import React from "react";
++>+
++>+export default ({ data }) => {
++>+  const post = data.markdownRemark;
++>+  return (
++>+    &lt;div>
++>+      &lt;h1>{post.frontmatter.title}&lt;/h1>
++>+      &lt;div dangerouslySetInnerHTML={{ __html: post.html }} />
++>+    &lt;/div>
++>+  );
++>+};
++>+
++>+export const query = graphql<span class="token variable"><span class="token variable">`</span>
++<span class="token operator">></span>+  query LitlogPageQuery<span class="token punctuation">(</span>$slug: String<span class="token operator">!</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
++<span class="token operator">></span>+    markdownRemark<span class="token punctuation">(</span>fields: <span class="token punctuation">{</span> slug: <span class="token punctuation">{</span> eq: $slug <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
++<span class="token operator">></span>+      html
++<span class="token operator">></span>+      frontmatter <span class="token punctuation">{</span>
++<span class="token operator">></span>+        title
++<span class="token operator">></span>+      <span class="token punctuation">}</span>
++<span class="token operator">></span>+    <span class="token punctuation">}</span>
++<span class="token operator">></span>+  <span class="token punctuation">}</span>
++<span class="token operator">></span>+<span class="token variable">`</span></span>;
+EOF</span>
+<span class="token function">rm</span> __blank
+litlog created files/src/templates/litlog-page.js <span class="token string">"following [part-seven](https://www.gatsbyjs.org/tutorial/part-seven/) of the [Gatsby.js Tutorial, except use *LitlogPageQuery* instead of *BlogPostQuery"</span>
+@@ -410,39 +412,112 @@ litlog created files/src/templates/litlog-page.js <span class="token string">"following [part-seven](https:
+litlog updating files/src/pages/litlog/index.js
+# edit file
+git apply &lt;&lt; EOF
+---- a/src/pages/litlog/index.js
+-+++ b/src/pages/litlog/index.js
+-@@ -7,7 +7,7 @@ export default ({ data }) => {
+-       &lt;table>
+-         &lt;thead>
+-           &lt;tr>
+--            &lt;th>fileAbsolutePath&lt;/th>
+-+            &lt;th>link&lt;/th>
+-             &lt;th>title&lt;/th>
+-           &lt;/tr>
+-         &lt;/thead>
+-@@ -15,7 +15,7 @@ export default ({ data }) => {
+-           {data.allMarkdownRemark.edges.map(({ node }, index) =>
+-             &lt;tr key={index}>
+-               &lt;td>
+--                {node.fileAbsolutePath}
+-+                &lt;Link to={node.fields.slug}>{node.fields.slug}&lt;/Link>
+-               &lt;/td>
+-               &lt;td>
+-                 {node.frontmatter.title}
+-@@ -39,6 +39,9 @@ export const query = graphql<span class="token variable"><span class="token variable">`</span>
+-           frontmatter <span class="token punctuation">{</span>
+-             title
+-           <span class="token punctuation">}</span>
+-+          fields <span class="token punctuation">{</span>
+-+            slug
+-+          <span class="token punctuation">}</span>
+-         <span class="token punctuation">}</span>
+-       <span class="token punctuation">}</span>
+-     <span class="token punctuation">}</span>
++<span class="token operator">></span>--- a/src/pages/litlog/index.js
++<span class="token operator">></span>+++ b/src/pages/litlog/index.js
++<span class="token operator">></span>@@ -7,7 +7,7 @@ <span class="token function">export</span> default <span class="token punctuation">(</span><span class="token punctuation">{</span> data <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
++<span class="token operator">></span>       <span class="token operator">&lt;</span>table<span class="token operator">></span>
++<span class="token operator">></span>         <span class="token operator">&lt;</span>thead<span class="token operator">></span>
++<span class="token operator">></span>           <span class="token operator">&lt;</span>tr<span class="token operator">></span>
++<span class="token operator">></span>-            <span class="token operator">&lt;</span>th<span class="token operator">></span>fileAbsolutePath<span class="token operator">&lt;</span>/th<span class="token operator">></span>
++<span class="token operator">></span>+            <span class="token operator">&lt;</span>th<span class="token operator">></span>link<span class="token operator">&lt;</span>/th<span class="token operator">></span>
++<span class="token operator">></span>             <span class="token operator">&lt;</span>th<span class="token operator">></span>title<span class="token operator">&lt;</span>/th<span class="token operator">></span>
++<span class="token operator">></span>           <span class="token operator">&lt;</span>/tr<span class="token operator">></span>
++<span class="token operator">></span>         <span class="token operator">&lt;</span>/thead<span class="token operator">></span>
++<span class="token operator">></span>@@ -15,7 +15,7 @@ <span class="token function">export</span> default <span class="token punctuation">(</span><span class="token punctuation">{</span> data <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
++<span class="token operator">></span>           <span class="token punctuation">{</span>data.allMarkdownRemark.edges.map<span class="token punctuation">((</span><span class="token punctuation">{</span> node <span class="token punctuation">}</span>, index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
++<span class="token operator">></span>             <span class="token operator">&lt;</span>tr key<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token operator">></span>
++<span class="token operator">></span>               <span class="token operator">&lt;</span>td<span class="token operator">></span>
++<span class="token operator">></span>-                <span class="token punctuation">{</span>node.fileAbsolutePath<span class="token punctuation">}</span>
++<span class="token operator">></span>+                <span class="token operator">&lt;</span>Link to<span class="token operator">=</span><span class="token punctuation">{</span>node.fields.slug<span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">{</span>node.fields.slug<span class="token punctuation">}</span><span class="token operator">&lt;</span>/Link<span class="token operator">></span>
++<span class="token operator">></span>               <span class="token operator">&lt;</span>/td<span class="token operator">></span>
++<span class="token operator">></span>               <span class="token operator">&lt;</span>td<span class="token operator">></span>
++<span class="token operator">></span>                 <span class="token punctuation">{</span>node.frontmatter.title<span class="token punctuation">}</span>
++<span class="token operator">></span>@@ -39,6 +39,9 @@ <span class="token function">export</span> const query <span class="token operator">=</span> graphql<span class="token variable">`</span></span>
++>           frontmatter {
++>             title
++>           }
++>+          fields {
++>+            slug
++>+          }
++>         }
++>       }
++>     }
+EOF
+litlog updated files/src/pages/litlog/index.js "</span>following <span class="token punctuation">[</span>part-seven<span class="token punctuation">]</span><span class="token punctuation">(</span>https://www.gatsbyjs.org/tutorial/part-seven/<span class="token punctuation">)</span> of the <span class="token punctuation">[</span>Gatsby.js Tutorial<span class="token punctuation">]</span>, modify to get the slug <span class="token keyword">in</span> the graphql query and use <span class="token keyword">in</span> a Link<span class="token string">"
+litlog updated tasks/task-1 "</span>added plan step-6<span class="token string">" 
+git add .
+git commit -m "</span>added task-1 plan step-6"</code></pre>
+      </div>
+<p>+1. Configure code and syntax highlighting with PrismJS by following <a href="https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/">these instructions</a></p>
+<ul>
+<li>
+<ol>
+<li>Install prismjs
++<code class="language-text">bash
++litlog updating tasks/task-1
++npm install --save gatsby-remark-prismjs prismjs
++git apply &lt;&lt; EOF
++&gt;--- a/sites/site-1/files/package.json
++&gt;+++ b/sites/site-1/files/package.json
++&gt;@@ -7,8 +7,10 @@
++&gt;     &quot;gatsby&quot;: &quot;^1.9.247&quot;,
++&gt;     &quot;gatsby-link&quot;: &quot;^1.6.40&quot;,
++&gt;     &quot;gatsby-plugin-react-helmet&quot;: &quot;^2.0.10&quot;,
++&gt;+    &quot;gatsby-remark-prismjs&quot;: &quot;^2.0.4&quot;,
++&gt;     &quot;gatsby-source-filesystem&quot;: &quot;^1.5.39&quot;,
++&gt;     &quot;gatsby-transformer-remark&quot;: &quot;^1.7.44&quot;,
++&gt;+    &quot;prismjs&quot;: &quot;^1.15.0&quot;,
++&gt;     &quot;react-helmet&quot;: &quot;^5.2.0&quot;
++&gt;   },
++&gt;   &quot;keywords&quot;: [
++EOF
++litlog updated files/package.json &quot;ran &#39;npm install --save gatsby-remark-prismjs prismjs&#39; following [these instructions](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/)&quot;
++</code></li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Update <litlog-link to="/files/gatsby-config.js.file">gatsby-config.js</litlog-link>
++<code class="language-text">bash
++litlog updating files/gatsby-config.js
++# update file
++git apply &lt;&lt; EOF
++&gt;--- a/sites/site-1/files/gatsby-config.js
++&gt;+++ b/sites/site-1/files/gatsby-config.js
++&gt;@@ -11,7 +11,14 @@ module.exports = {
++&gt;         path: `${__dirname}/src/pages/litlog`,
++&gt;       },
++&gt;     },
++&gt;-    `gatsby-transformer-remark`,
++&gt;+    {
++&gt;+      resolve: `gatsby-transformer-remark`,
++&gt;+      options: {
++&gt;+        plugins: [
++&gt;+          `gatsby-remark-prismjs`,
++&gt;+        ]
++&gt;+      }
++&gt;+    }
++&gt;   ],
++&gt;   pathPrefix: &#39;/gatsby-starter-litlog&#39;
++&gt; }
++EOF
++litlog updated files/gatsby-config.js &quot;following [these instructions](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/)&quot;
++# restart dev server
++</code></li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Update <litlog-link to="/files/src/layouts/index.js.file">layouts/index.js</litlog-link>
++<code class="language-text">bash
++litlog updating files/src/layouts/index.js
++# update file
++git apply &lt;&lt; EOF
++&gt;--- a/sites/site-1/files/src/layouts/index.js
++&gt;+++ b/sites/site-1/files/src/layouts/index.js
++&gt;@@ -3,6 +3,7 @@ import PropTypes from &#39;prop-types&#39;
++&gt; import Helmet from &#39;react-helmet&#39;
++&gt; 
++&gt; import Header from &#39;../components/header&#39;
++&gt;+import &quot;prismjs/themes/prism-okaidia.css&quot;;
++&gt; import &#39;./index.css&#39;
++&gt; 
++&gt; const Layout = ({ children, data }) =&gt; (
++EOF
++litlog updated files/src/layouts/index.js &quot;following [these instructions](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/)&quot;
++</code></li>
+</ol>
+</li>
+<li>
+<ol>
+<li>
+<p>Check out this page. Does it look OK?
++<code class="language-text">bash
++litlog updated tasks/task-1 &quot;added plan step-7&quot; 
++git add .
++git commit -m &quot;added task-1 plan step-7&quot;
++</code></p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text"></code></pre>
+      </div>
+</li>
+</ol>
+</li>
+</ul></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-312527e7427d7bfcb3ab.js","158931058396630":"component---src-templates-litlog-page-js-8f892849633af9e7202c.js","162898551421021":"component---src-pages-404-js-1d08e0793594e877b9d4.js","35783957827783":"component---src-pages-index-js-88c8127a578010eb4dd0.js","72108002173884":"component---src-pages-litlog-index-js-20b9dc7d7b9c2339e52b.js","218538773642512":"component---src-pages-page-2-js-4adb24b1c5bb837d9904.js","60335399758886":"path----cac63ff5c1b42581353c.js","200621832431575":"path---sites-site-1-requests-request-1-1fd874ff25ca9998f8ce.js","88425965849033":"path---changes-files-src-templates-litlog-page-js-file-2018-06-26-t-1156-bbdc209de99654dcfa9a.js","141241249169161":"path---changes-files-src-templates-litlog-page-js-file-2018-06-26-t-1202-8c70623814f81a182ca3.js","10859605718490":"path---sites-site-1-changes-files-prettierrc-file-2018-06-24-t-0823-8274f0ce3cddac195b4f.js","228185803104088":"path---sites-site-1-changes-files-gatsby-node-js-file-2018-06-24-t-0823-41a9d4af69184521c122.js","55450659881236":"path---sites-site-1-changes-files-readme-md-file-2018-06-24-t-0823-5b0b4c1db4a1884858c0.js","80208392489195":"path---sites-site-1-changes-files-gatsby-node-js-file-2018-06-26-t-1119-81cae5e5b546958b2235.js","214944864858052":"path---sites-site-1-changes-files-gatsby-node-js-file-2018-06-26-t-1127-9ead2e7d3ed3cc4ff6b2.js","216726196174268":"path---sites-site-1-changes-files-gatsby-ssr-js-file-2018-06-24-t-0823-e7a5aeb2214668e61c08.js","108675521972736":"path---sites-site-1-changes-files-license-file-2018-06-24-t-0823-f44f513eddad0fbde4b2.js","151845305124894":"path---sites-site-1-changes-files-gatsby-browser-js-file-2018-06-24-t-0823-52a8c8de703fa3cd9dab.js","176346294278279":"path---sites-site-1-changes-files-package-json-file-2018-06-27-t-1221-3094af309e966d7681aa.js","46055368580966":"path---sites-site-1-changes-files-package-json-file-2018-06-24-t-0823-6be6dab5595a86e6a478.js","127987965781355":"path---sites-site-1-changes-files-package-json-file-2018-06-26-t-1017-0deeb9085fb3a10ce642.js","230395368246818":"path---sites-site-1-changes-files-package-json-file-2018-06-26-t-1025-607f3e04b9c8b2ca60d1.js","202304231606241":"path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-24-t-0823-a887a9309b88042f8fae.js","4352957107651":"path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-25-t-0004-3e81a2d449bc8eb60861.js","230768594896868":"path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-27-t-1222-43e310a36d838c93a8be.js","254253102277931":"path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-27-t-1225-3e44b61978b84dce0476.js","92495708103807":"path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-25-t-0121-9a42299b042085abfcd6.js","29759237972305":"path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-26-t-1028-47ef3820c7174cdaa7d5.js","258908851593523":"path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-26-t-1032-df4720154a48368417d3.js","212920032039161":"path---sites-site-1-changes-tasks-task-1-2018-06-25-t-0202-b75b890dccc5a60abbd4.js","93046896169472":"path---sites-site-1-changes-tasks-task-1-2018-06-25-t-0204-662094f073d01d251ca4.js","223510923771770":"path---sites-site-1-changes-tasks-task-1-2018-06-26-t-1006-97db21ee37d86361bf4d.js","158366264464093":"path---sites-site-1-changes-tasks-task-1-2018-06-27-t-1218-2155309666cd7507aa99.js","142405039418957":"path---sites-site-1-changes-tasks-task-1-2018-06-26-t-1119-87e74abda51ef48d4055.js","108962632460826":"path---sites-site-1-changes-tasks-task-1-2018-06-26-t-1111-0b45afaaef4176c2eaa0.js","9121814038292":"path---sites-site-1-changes-tasks-task-1-2018-06-26-t-1233-f1d3b53e1b85849f8e1b.js","231813315401261":"path---sites-site-1-changes-requests-request-1-2018-06-25-t-0132-43caa0cb060edd890e59.js","168596773565264":"path---sites-site-1-changes-requests-request-1-2018-06-25-t-0200-fe99098725299504c4ec.js","4345039424150":"path---changes-files-src-pages-litlog-index-js-file-2018-06-26-t-1036-5b8bbb4369e618a26e49.js","50900366886176":"path---changes-files-src-pages-litlog-index-js-file-2018-06-26-t-1104-7d557118a3dde67cb55e.js","197182361404334":"path---changes-files-src-pages-litlog-index-js-file-2018-06-26-t-1227-8db3cf7200e9c02b85cc.js","186563673010517":"path---changes-files-src-pages-litlog-index-js-file-2018-06-26-t-1231-64fc7853bef125f5fbc2.js","98329859766595":"path---sites-site-1-changes-files-src-layouts-index-css-file-2018-06-24-t-0823-bff87a1b92a5f2c5bc43.js","109623193905858":"path---sites-site-1-changes-files-src-layouts-index-js-file-2018-06-24-t-0823-52053aca89c94aa38dbd.js","18659509175294":"path---sites-site-1-changes-files-src-components-header-js-file-2018-06-24-t-0823-baa9fe15e8bc777ac35a.js","256317154295163":"path---sites-site-1-changes-files-src-pages-404-js-file-2018-06-24-t-0823-6ac9942e97db06e0725e.js","31569151103298":"path---sites-site-1-changes-files-src-pages-index-js-file-2018-06-24-t-0823-f3bb2bf301c7a0e90078.js","82305901528544":"path---sites-site-1-changes-files-src-pages-page-2-js-file-2018-06-24-t-0823-1c95309a6520d2fc5c7b.js","71543427741893":"path---sites-site-1-changes-files-src-layouts-index-js-file-2018-06-27-t-1226-41b3d0ed837c6bf6c8f4.js","117333594051156":"path---sites-site-1-changes-files-src-layouts-index-js-file-2018-06-27-t-1227-c77e9bcc86730cbd2677.js","29239442616916":"path---sites-site-1-tasks-task-1-f396130948a64d28979f.js","54315943444301":"path---sites-site-1-changes-tasks-task-1-2018-06-27-t-1235-a0407994ed706eca1f0a.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-a0e39f21c11f6a62c5ab.js","204245480912711":"path---litlog-6370ff6970bd2f24ee5f.js","135728916539164":"path---page-2-a0e39f21c11f6a62c5ab.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-e96121640b0eaac02db8.js"}/*]]>*/</script><script>/*<![CDATA[*/["/gatsby-starter-litlog/commons-922bd637923bf00f2c28.js","/gatsby-starter-litlog/app-312527e7427d7bfcb3ab.js","/gatsby-starter-litlog/path---sites-site-1-changes-tasks-task-1-2018-06-27-t-1235-a0407994ed706eca1f0a.js","/gatsby-starter-litlog/component---src-templates-litlog-page-js-8f892849633af9e7202c.js","/gatsby-starter-litlog/component---src-layouts-index-js-e96121640b0eaac02db8.js"].forEach(function(s){document.write('<script src="'+s+'" defer></'+'script>')})/*]]>*/</script></body></html>
