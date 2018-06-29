@@ -30,6 +30,7 @@ module.exports.run = (verb, slug, comment, timestamp) => {
     let change_title = "";
     let change_status = "";
     let change = "";
+    let content = "";
     if (comment === undefined) {
       comment = "";
     }
