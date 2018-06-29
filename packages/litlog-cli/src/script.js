@@ -24,8 +24,8 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       timestamp = now.toISOString().substring(0, 16).replace(":", "");
     }
     let slug_remainder = slug;
-    let file = slug;
-    let change_file = slug;
+    let file = "";
+    let change_file = "";
     let type = slug;
     let change_title = "";
     let change_status = "";
@@ -123,41 +123,37 @@ ${lines.join('\n')}`;
         }
       }
       change = `${change}\`\`\``;
+    } else if (verb === "creating" && slug.match(/^tasks\/task-/)) {
+      content = `---
+title: ""
+date: "${today}"
+request: ""
+status: "not-started"
+---
+## Plan
+`              
+    } else if (verb === "creating" && slug.match(/^requests\/request`-/)) {
+      content = `---
+title: ""
+date: "${today}"
+status: "open"
+---
+## Specification
+`              
     }
-  
-  // else
-  //   if [[ $verb =~ creating ]]; then
-  //     if [[ $slug =~ /files/ ]]; then
-  //       echo "file is $file"
-  //     elif [[ $slug =~ /tasks/task- ]]; then
-  //       echo "creating new task ${file}"
-  //       cat << EOF > $file
-  // ---
-  // title: ""
-  // date: "$today"
-  // request: ""
-  // status: "not-started"
-  // ---
-  // ## Plan
-  // EOF
-  //     elif [[ $slug =~ /requests/request- ]]; then
-  //       echo "creating new request ${file}"
-  //       cat << EOF > $file
-  // ---
-  // title: ""
-  // date: "$today"
-  // status: "open"
-  // ---
-  // ## Specification
-  // EOF
-  //     fi
-  //   fi
-  // fi
-    
-    try{
-      fs.outputFileSync(change_file, change);
-    }catch (e){
-      console.log("Cannot write file ", e);
+    if (change_file !== "") {
+      try {
+        fs.outputFileSync(change_file, change);
+      } catch (e){
+        console.log("Cannot write file ", e);
+      }
+    }
+    if (verb === "creating" && file !== "") {
+      try {
+        fs.outputFileSync(file, content);
+      } catch (e){
+        console.log("Cannot write file ", e);
+      }
     }
   
     // console.log("site", site);
