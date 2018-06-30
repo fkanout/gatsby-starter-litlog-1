@@ -2,8 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const LitlogLink = ({ to, children }) => {
+  const goto = `/litlog${to}`;
   return (
-    <Link to={to}>
+    <Link to={goto}>
       {children}
     </Link>
 )}
