@@ -56,7 +56,8 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       if (type === "files") {
         slug = slug.replace(/$/, ".file");
         if (slug.match(/^files\/src\/pages\/litlog/) || 
-          slug.match(/^files\/src\/components\/litlog/)
+          slug.match(/^files\/src\/components\/litlog/) ||
+          slug.match(/^files\/src\/templates\/litlog/)
         ) {
           file = `.${slug_remainder}`;
           change_file = `src/pages/litlog/changes/${slug}/${timestamp}.md`;
