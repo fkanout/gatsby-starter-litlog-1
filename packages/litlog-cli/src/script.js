@@ -133,7 +133,7 @@ status: "not-started"
 ---
 ## Plan
 `              
-    } else if (verb === "creating" && slug.match(/^requests\/request`-/)) {
+    } else if (verb === "creating" && slug.match(/^requests\/request-/)) {
       content = `---
 title: ""
 date: "${today}"
