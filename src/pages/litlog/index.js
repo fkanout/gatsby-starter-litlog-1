@@ -1,29 +1,10 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from "react"
+import LitlogContentList from "../../components/litlog-content-list"
 
 export default ({ data }) => {
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>link</th>
-            <th>title</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.allMarkdownRemark.edges.map(({ node }, index) =>
-            <tr key={index}>
-              <td>
-                <Link to={node.fields.slug}>{node.fields.slug}</Link>
-              </td>
-              <td>
-                {node.frontmatter.title}
-              </td>
-            </tr>
-          )}
-        </tbody>
-      </table>
+      <LitlogContentList data={data}></LitlogContentList>
     </div>
   );
 };
