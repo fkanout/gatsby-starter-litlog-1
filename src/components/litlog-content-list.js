@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LwdContentList = ({ type }) => {
+const LwdContentList = ({ type, data }) => {
   return (
     <span>
       Hello, World!
@@ -8,3 +8,17 @@ const LwdContentList = ({ type }) => {
 )}
 
 export default LwdContentList
+export const allMarkdownFragment = graphql`
+fragment AllMarkdownFragment on MarkdownRemarkConnection {
+	totalCount
+  edges {
+    node {
+      frontmatter {
+        title
+      }
+      fields {
+        slug
+      }
+    }
+  }
+}`;

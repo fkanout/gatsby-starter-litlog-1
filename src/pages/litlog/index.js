@@ -29,21 +29,9 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { fields: [fileAbsolutePath] }) {
-      totalCount
-      edges {
-        node {
-          id
-          fileAbsolutePath
-          frontmatter {
-            title
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
+query LitlogIndexQuery {
+  allMarkdownRemark(sort: {fields: [fileAbsolutePath]}) {
+    ...AllMarkdownFragment
   }
+}
 `;
