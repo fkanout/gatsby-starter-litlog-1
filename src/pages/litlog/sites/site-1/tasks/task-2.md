@@ -1,0 +1,56 @@
+---
+title: "Create litlog-link component to link to items in the litlog system"
+date: "2018-06-30"
+request: "request-2"
+status: "in-progress"
+---
+## Plan
+
+1. Initialize and create a dummy React component.
+```bash
+npm run site-develop 
+# in a different terminal
+export LITLOG_SITE=site-1
+litlog creating requests/request-2
+# update request-2 with specification
+touch __blank
+git apply << EOF
+>--- a/__blank
+>+++ b/./src/pages/litlog/sites/site-1/requests/request-2.md
+>@@ -0,0 +1,8 @@
+>+---
+>+title: "Create litlog-link component to link to items in the litlog system"
+>+date: "2018-06-30"
+>+status: "open"
+>+---
+>+## Specification
+>+
+>+Create a <litlog-link to="/files/components/litlog-code.js.file">litlog-code</litlog-link> React component that link to items in the <litlog-link to="/">litlog</litlog-link> system.
+EOF
+rm __blank
+litlog created requests/request-2 "added spec"
+litlog creating tasks/task-2
+litlog creating files/src/components/litlog-link.js
+# add dummy code and check <LitlogLink>foo</LitlogLink> on a .js page
+touch __blank
+git apply << EOF
+>--- a/__blank
+>+++ b/./src/components/litlog-link.js
+>@@ -0,0 +1,10 @@
+>+import React from 'react'
+>+import Link from 'gatsby-link'
+>+
+>+const LitlogLink = () => (
+>+  <span>
+>+    Hello, World!
+>+  </span>
+>+)
+>+
+>+export default LitlogLink
+EOF
+rm __blank
+litlog created files/src/components/litlog-link.js "added dummy"
+litlog created tasks/task-2 "added plan step-1"
+git add .
+git commit -m "added task-2 plan step-1"
+```

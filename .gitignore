@@ -19,6 +19,9 @@ packages/*/lib
 !sites
 !src
 /src/*
+!src/components
+/src/components/*
+!src/components/litlog-*
 !src/pages
 /src/pages/*
 !src/pages/litlog
