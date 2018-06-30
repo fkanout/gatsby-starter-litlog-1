@@ -1,0 +1,2 @@
+webpackJsonp([0x6323d47b90e9],{422:function(t,e){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/changes/files/src/components/litlog-link.js.file/2018-06-30T2211/"}}}});
+//# sourceMappingURL=path---changes-files-src-components-litlog-link-js-file-2018-06-30-t-2211-d55215183472cc80c31b.js.map

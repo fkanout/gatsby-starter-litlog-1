@@ -1,0 +1,2 @@
+webpackJsonp([4352957107651],{437:function(t,e){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/sites/site-1/changes/files/gatsby-config.js.file/2018-06-25T0004/"}}}});
+//# sourceMappingURL=path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-25-t-0004-9a55ffcd60eec7409664.js.map
