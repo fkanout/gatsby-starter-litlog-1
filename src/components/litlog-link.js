@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const LitlogLink = () => (
-  <span>
-    Hello, World!
-  </span>
-)
+const LitlogLink = ({ to }) => {
+  return (
+    <span>
+      {to}
+    </span>
+)}
 
 export default LitlogLink
