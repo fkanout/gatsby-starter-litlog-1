@@ -31,3 +31,33 @@ litlog created tasks/task-4 "added plan step-1"
 git add .
 git commit -m "added task-4 plan step-1"
 ```
+1. Get the files from [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) and add into changes.
+```bash
+litlog updating tasks/task-4
+# in a different terminal window outside the project root
+export LITLOG_SITE=site-2
+gatsby_new_timestamp=$(date +%Y-%m-%dT%H%M)
+gatsby new $LITLOG_SITE https://github.com/gatsbyjs/gatsby-starter-hello-world
+echo $gatsby_new_timestamp
+# 2018-07-01T1521
+cd $LITLOG_SITE
+rm -r node_modules
+rm .gitignore
+cd ../gatsby-starter-litlog
+mkdir sites/$LITLOG_SITE/
+mkdir sites/$LITLOG_SITE/files
+mkdir sites/$LITLOG_SITE/files/src
+mkdir sites/$LITLOG_SITE/files/src/components
+mkdir sites/$LITLOG_SITE/files/src/layouts
+cp -R ../$LITLOG_SITE/* sites/$LITLOG_SITE/files
+# temporarily stag sites/ files and run 'git status' to get a list of the files
+litlog created files/LICENSE "Ran 'gatsby new $LITLOG_SITE https://github.com/gatsbyjs/gatsby-starter-hello-world'" $gatsby_new_timestamp
+litlog created files/README.md "Ran 'gatsby new $LITLOG_SITE https://github.com/gatsbyjs/gatsby-starter-hello-world'" $gatsby_new_timestamp
+litlog created files/package-lock.json "Ran 'gatsby new $LITLOG_SITE https://github.com/gatsbyjs/gatsby-starter-hello-world'" $gatsby_new_timestamp
+litlog created files/package.json "Ran 'gatsby new $LITLOG_SITE https://github.com/gatsbyjs/gatsby-starter-hello-world'" $gatsby_new_timestamp
+litlog created files/src/pages/index.js "Ran 'gatsby new $LITLOG_SITE https://github.com/gatsbyjs/gatsby-starter-hello-world'" $gatsby_new_timestamp
+# back in original terminal window where LITLOG_SITE=site-1
+litlog created tasks/task-4 "added plan step-2"
+git add .
+git commit -m "added task-4 plan step-2"
+```
