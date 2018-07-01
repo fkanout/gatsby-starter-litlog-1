@@ -55,7 +55,10 @@ module.exports.run = (verb, slug, comment, timestamp) => {
       slug_remainder = slug.replace(new RegExp(`^${type}`), "");
       if (type === "files") {
         slug = slug.replace(/$/, ".file");
-        if (slug.match(/^files\/src\/pages\/litlog/)) {
+        if (slug.match(/^files\/src\/pages\/litlog/) || 
+          slug.match(/^files\/src\/components\/litlog/) ||
+          slug.match(/^files\/src\/templates\/litlog/)
+        ) {
           file = `.${slug_remainder}`;
           change_file = `src/pages/litlog/changes/${slug}/${timestamp}.md`;
         } else {
@@ -133,7 +136,7 @@ status: "not-started"
 ---
 ## Plan
 `              
-    } else if (verb === "creating" && slug.match(/^requests\/request`-/)) {
+    } else if (verb === "creating" && slug.match(/^requests\/request-/)) {
       content = `---
 title: ""
 date: "${today}"

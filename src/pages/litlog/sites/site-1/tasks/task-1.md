@@ -315,7 +315,7 @@ litlog updated tasks/task-1 "added task-1 plan step-5"
 git add .
 git commit -m "added task-1 plan step-5"
 ```
-1. Follow [part-seven](https://www.gatsbyjs.org/tutorial/part-seven/) of the [Gatsby.js Tutorial] so <litlog-link to="/">litlog</litlog-link> pages can be viewed. First create <litlog-link to="/files/gatsby-node.js.file">gatsby-node.js</litlog-link> *gatsby-node.js* except use */litlog${slug}* for the *value* of *createNodeField* and *litlog-page.js* instead of *blog-post.js*. Then create <litlog-link to="/files/src/templates/litlog-page.js.file">litlog-page.js</litlog-link> and use *LitlogPageQuery* instead of *BlogPostQuery*. Modify <litlog-link to="/files/src/pages/litlog/index.js.file">the litlog index page</litlog-link> to add *import Link from "gatsby-link";*, replace *fileAbsolutePath* with *link*, *{node.fileAbsolutePath}* with *<Link to={node.fields.slug}>{node.fields.slug}</Link>*, and change the graphql to add the slug.
+1. Follow [part-seven](https://www.gatsbyjs.org/tutorial/part-seven/) of the [Gatsby.js Tutorial] so <litlog-link to="/">litlog</litlog-link> pages can be viewed. First create <litlog-link to="/files/gatsby-node.js">gatsby-node.js</litlog-link> *gatsby-node.js* except use */litlog${slug}* for the *value* of *createNodeField* and *litlog-page.js* instead of *blog-post.js*. Then create <litlog-link to="/files/src/templates/litlog-page.js">litlog-page.js</litlog-link> and use *LitlogPageQuery* instead of *BlogPostQuery*. Modify <litlog-link to="/files/src/pages/litlog/index.js">the litlog index page</litlog-link> to add *import Link from "gatsby-link";*, replace *fileAbsolutePath* with *link*, *{node.fileAbsolutePath}* with *<Link to={node.fields.slug}>{node.fields.slug}</Link>*, and change the graphql to add the slug.
 ```bash
 litlog updating tasks/task-1
 litlog updating files/gatsby-node.js
@@ -470,7 +470,7 @@ git apply << EOF
 EOF
 litlog updated files/package.json "ran 'npm install --save gatsby-remark-prismjs prismjs' following [these instructions](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/)"
 ```
-   1. Update <litlog-link to="/files/gatsby-config.js.file">gatsby-config.js</litlog-link>
+   1. Update <litlog-link to="/files/gatsby-config.js">gatsby-config.js</litlog-link>
 ```bash
 litlog updating files/gatsby-config.js
 # update file
@@ -497,7 +497,7 @@ EOF
 litlog updated files/gatsby-config.js "following [these instructions](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/)"
 # restart dev server
 ```
-   1. Update <litlog-link to="/files/src/layouts/index.js.file">layouts/index.js</litlog-link>
+   1. Update <litlog-link to="/files/src/layouts/index.js">layouts/index.js</litlog-link>
 ```bash
 litlog updating files/src/layouts/index.js
 # update file
@@ -520,4 +520,26 @@ litlog updated files/src/layouts/index.js "following [these instructions](https:
 litlog updated tasks/task-1 "added plan step-7" 
 git add .
 git commit -m "added task-1 plan step-7"
+```
+1. Update siteMetadata.title
+```bash
+litlog updating tasks/task-1
+litlog updating files/gatsby-config.js
+# update siteMetadata.title
+git apply << EOF
+>--- a/sites/site-1/files/gatsby-config.js
+>+++ b/sites/site-1/files/gatsby-config.js
+>@@ -1,6 +1,6 @@
+> module.exports = {
+>   siteMetadata: {
+>-    title: 'Gatsby Default Starter',
+>+    title: 'Gatsby Litlog Starter',
+>   },
+>   plugins: [
+>     'gatsby-plugin-react-helmet',
+EOF
+litlog updated files/gatsby-config.js "updated siteMetadata.title"
+litlog updated tasks/task-1 "added plan step-8"
+git add .
+git commit -m "added task-1 plan step-8"
 ```
