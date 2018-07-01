@@ -5,4 +5,4 @@ status: "open"
 ---
 ## Specification
 
-Create a <litlog-link to="/files/components/litlog-code.js.file">litlog-code</litlog-link> React component that link to items in the <litlog-link to="/">litlog</litlog-link> system.
+Create a <litlog-link to="/files/components/litlog-code.js">litlog-code</litlog-link> React component that link to items in the <litlog-link to="/">litlog</litlog-link> system.

@@ -276,7 +276,7 @@ litlog updated tasks/task-3 "plan step-2"
 git add .
 git commit -m "added task-3 plan step-2"
 ```
-1. Refine <litlog-link to="/files/src/pages/litlog/index.js.file">the litlog index page</litlog-link> and <litlog-link to="/files/src/components/litlog-content-list.js.file">litlog-content-list.js</litlog-link> with the *type* prop.
+1. Refine <litlog-link to="/files/src/pages/litlog/index.js">the litlog index page</litlog-link> and <litlog-link to="/files/src/components/litlog-content-list.js">litlog-content-list.js</litlog-link> with the *type* prop.
 ```bash
 litlog updating tasks/task-3
 litlog updating files/src/pages/litlog/index.js
