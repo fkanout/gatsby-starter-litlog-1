@@ -1,14 +1,32 @@
 {
   "name": "gatsby-starter-hello-world",
   "description": "Gatsby hello world starter",
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-remark-prismjs": "^2.0.4",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "prismjs": "^1.15.0",
+    "react-helmet": "^5.2.0",
+    "rehype-react": "^3.0.2"
+  },
   "license": "MIT",
   "scripts": {
+    "build": "npm run site && gatsby build",
     "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve"
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run site && gatsby build --prefix-paths && gh-pages -d public",
+    "site": "cross-var babel sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md",
+    "site-develop": "npm-run-parallel site-watch develop",
+    "site-watch": "cross-var babel -w sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md"
   },
-  "dependencies": {
-    "gatsby": "^1.9.250",
-    "gatsby-link": "^1.6.40"
+  "devDependencies": {
+    "cross-var": "^1.1.0",
+    "gh-pages": "^1.2.0",
+    "npm-run-parallel": "^0.6.0",
+    "prettier": "^1.12.0"
   }
 }
