@@ -29,6 +29,7 @@
     "site-watch": "cross-var babel -w sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "cross-var": "^1.1.0",
     "gh-pages": "^1.2.0",
     "npm-run-parallel": "^0.6.0",
