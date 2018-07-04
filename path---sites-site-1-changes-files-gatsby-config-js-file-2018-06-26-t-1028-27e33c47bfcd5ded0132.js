@@ -1,2 +1,2 @@
-webpackJsonp([29759237972305],{478:function(t,e){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/sites/site-1/changes/files/gatsby-config.js.file/2018-06-26T1028/"}}}});
+webpackJsonp([29759237972305],{497:function(t,e){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/sites/site-1/changes/files/gatsby-config.js.file/2018-06-26T1028/"}}}});
 //# sourceMappingURL=path---sites-site-1-changes-files-gatsby-config-js-file-2018-06-26-t-1028-27e33c47bfcd5ded0132.js.map

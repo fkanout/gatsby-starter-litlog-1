@@ -1,2 +1,2 @@
-webpackJsonp([37209910617259],{521:function(t,a){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/sites/site-1/changes/tasks/task-2/2018-06-30T2024/"}}}});
+webpackJsonp([37209910617259],{542:function(t,a){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/sites/site-1/changes/tasks/task-2/2018-06-30T2024/"}}}});
 //# sourceMappingURL=path---sites-site-1-changes-tasks-task-2-2018-06-30-t-2024-50133f49938a43b2a584.js.map

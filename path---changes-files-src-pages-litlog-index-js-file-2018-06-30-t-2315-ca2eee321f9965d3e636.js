@@ -1,2 +1,2 @@
-webpackJsonp([0xc129d52cfec5],{461:function(t,e){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/changes/files/src/pages/litlog/index.js.file/2018-06-30T2315/"}}}});
+webpackJsonp([0xc129d52cfec5],{480:function(t,e){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/changes/files/src/pages/litlog/index.js.file/2018-06-30T2315/"}}}});
 //# sourceMappingURL=path---changes-files-src-pages-litlog-index-js-file-2018-06-30-t-2315-ca2eee321f9965d3e636.js.map

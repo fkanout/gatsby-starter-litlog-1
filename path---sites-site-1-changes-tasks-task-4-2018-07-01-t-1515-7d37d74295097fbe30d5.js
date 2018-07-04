@@ -1,0 +1,2 @@
+webpackJsonp([0xdc95d6f7d6cd],{556:function(t,a){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},frontmatter:{title:"Update"}}},pathContext:{slug:"/sites/site-1/changes/tasks/task-4/2018-07-01T1515/"}}}});
+//# sourceMappingURL=path---sites-site-1-changes-tasks-task-4-2018-07-01-t-1515-7d37d74295097fbe30d5.js.map
