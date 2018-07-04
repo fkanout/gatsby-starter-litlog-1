@@ -1,5 +1,5 @@
 ---
-title: "Setup site with content management using [Netlify CMS](https://github.com/netlify/netlify-cms)"
+title: "Setup site with content management using Netlify CMS"
 date: "2018-07-04"
 request: "request-1"
 status: "in-progress"
@@ -28,5 +28,5 @@ litlog created requests/request-1 "added spec"
 litlog creating tasks/task-1
 litlog created tasks/task-1 "added plan step-1"
 git add .
-git commit -m "added task-5 plan step-1"
+git commit -m "added task-1 plan step-1"
 ```

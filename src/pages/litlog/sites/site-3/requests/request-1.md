@@ -1,5 +1,5 @@
 ---
-title: "Setup site with content management using [Netlify CMS](https://github.com/netlify/netlify-cms)"
+title: "Setup site with content management using Netlify CMS"
 date: "2018-07-04"
 status: "open"
 ---
