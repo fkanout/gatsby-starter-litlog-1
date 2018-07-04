@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "author": "Carl W. Hunt <cwhunt@litlog.io>",
   "dependencies": {
+    "cross-var": "^1.1.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
