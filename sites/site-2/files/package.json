@@ -1,8 +1,6 @@
 {
-  "name": "gatsby-starter-litlog",
-  "description": "Gatsby litlog starter",
-  "version": "0.0.1",
-  "author": "Carl W. Hunt <cwhunt@litlog.io>",
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -14,9 +12,6 @@
     "react-helmet": "^5.2.0",
     "rehype-react": "^3.0.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "npm run site && gatsby build",
@@ -24,18 +19,14 @@
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "npm run site && gatsby build --prefix-paths && gh-pages -d public",
-    "site": "cross-var babel sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,package.json,package-lock.json,README.md",
+    "site": "cross-var babel sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md",
     "site-develop": "npm-run-parallel site-watch develop",
-    "site-watch": "cross-var babel -w sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,package.json,package-lock.json,README.md"
+    "site-watch": "cross-var babel -w sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md"
   },
   "devDependencies": {
     "cross-var": "^1.1.0",
     "gh-pages": "^1.2.0",
     "npm-run-parallel": "^0.6.0",
     "prettier": "^1.12.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/litlog/gatsby-starter-litlog"
   }
 }
