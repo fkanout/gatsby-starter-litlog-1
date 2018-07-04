@@ -1,8 +1,6 @@
 {
-  "name": "gatsby-starter-litlog",
-  "description": "Gatsby litlog starter",
-  "version": "0.0.1",
-  "author": "Carl W. Hunt <cwhunt@litlog.io>",
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -16,9 +14,6 @@
     "react-helmet": "^5.2.0",
     "rehype-react": "^3.0.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "npm run site && gatsby build",
@@ -31,14 +26,9 @@
     "site-watch": "cross-var babel -w sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "cross-var": "^1.1.0",
     "gh-pages": "^1.2.0",
     "npm-run-parallel": "^0.6.0",
     "prettier": "^1.12.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/litlog/gatsby-starter-litlog"
   }
 }
