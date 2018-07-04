@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-litlog",
-  "description": "Gatsby litlog starter",
-  "version": "0.0.1",
-  "author": "Carl W. Hunt <cwhunt@litlog.io>",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -19,23 +19,16 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run site && gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run site && gatsby build --prefix-paths && gh-pages -d public",
-    "site": "cross-var babel sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md",
-    "site-develop": "npm-run-parallel site-watch develop",
-    "site-watch": "cross-var babel -w sites/$LITLOG_SITE/files --out-dir ./ --presets=react --copy-files --ignore LICENSE,README.md"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "cross-var": "^1.1.0",
-    "gh-pages": "^1.2.0",
-    "npm-run-parallel": "^0.6.0",
     "prettier": "^1.12.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/litlog/gatsby-starter-litlog"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
