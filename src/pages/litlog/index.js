@@ -11,8 +11,11 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query LitlogIndexQuery {
-    allMarkdownRemark(sort: {fields: [fileAbsolutePath]}) {
+  query LitlogIndexQuery($siteRe: String!) {
+    allMarkdownRemark(
+      filter: { id: { regex: $siteRe } }
+      sort: {fields: [fileAbsolutePath]}
+    ) {
       ...AllMarkdownFragment
     }
   }
